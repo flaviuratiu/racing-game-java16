@@ -26,7 +26,9 @@ public class App {
 
         carReference.engine = engine1;
 
-        System.out.println(carReference.engine.manufacturer);
+        double currentDistance = carReference.accelerate(100, 0.5);
+
+
 
 
         System.out.println(carReference.make);
@@ -47,6 +49,8 @@ public class App {
         car2.make = "Mercedes";
         car2.model = "CLS";
         car2.color = "black";
+
+        double car2Distance = car2.accelerate(120, 3);
 
         car2.make = carReference.make;
 
