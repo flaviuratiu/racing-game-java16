@@ -28,7 +28,10 @@ public class App {
 
         double currentDistance = carReference.accelerate(100, 0.5);
 
-
+        System.out.println("Total distance before repair: " + carReference.totalTraveledDistance);
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(carReference);
+        System.out.println("Total distance after repair: " + carReference.totalTraveledDistance);
 
 
         System.out.println(carReference.make);
