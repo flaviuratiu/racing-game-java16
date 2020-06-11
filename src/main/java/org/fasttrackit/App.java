@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.CheatingVehicle;
+
 // one-line comment
 public class App {
 
@@ -8,7 +10,15 @@ public class App {
         game.start();
 
         Vehicle vehicle1 = new Vehicle();
+        vehicle1.setMake("     VW    ");
+        vehicle1.setModel("Golf");
+        vehicle1.setColor("red");
+
+        System.out.println(vehicle1.getMake());
+
         vehicle1.accelerate(60, 1);
+
+        System.out.println("Total vehicle count: " + Vehicle.getTotalVehicleCount());
 
 ////        vehicle1.totalVehicleCount = 1;
 //

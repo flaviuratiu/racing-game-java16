@@ -3,17 +3,17 @@ package org.fasttrackit;
 public class Vehicle {
 
     // class variable / static variable
-    static int totalVehicleCount;
+    private static int totalVehicleCount;
 
     // instance variables
-    String make;
-    String model;
-    String color;
-    double mileage;
-    double fuelLevel;
-    double maxSpeed;
-    double totalTraveledDistance;
-    boolean damaged;
+    private String make;
+    private String model;
+    private String color;
+    private double mileage;
+    private double fuelLevel;
+    private double maxSpeed;
+    private double totalTraveledDistance;
+    private boolean damaged;
 
     public Vehicle() {
         totalVehicleCount++;
@@ -63,5 +63,74 @@ public class Vehicle {
 
     public void makeSound() {
         System.out.println("Make way!!!");
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make.trim();
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public double getTotalTraveledDistance() {
+        return totalTraveledDistance;
+    }
+
+    public void setTotalTraveledDistance(double totalTraveledDistance) {
+        this.totalTraveledDistance = totalTraveledDistance;
+    }
+
+    public boolean isDamaged() {
+        return damaged;
+    }
+
+    public void setDamaged(boolean damaged) {
+        this.damaged = damaged;
+    }
+
+    // read-only variable
+    public static int getTotalVehicleCount() {
+        return totalVehicleCount;
     }
 }
