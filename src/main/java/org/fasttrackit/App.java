@@ -7,7 +7,9 @@ public class App {
         Game game = new Game();
         game.start();
 
-//        Vehicle vehicle1 = new Vehicle();
+        Vehicle vehicle1 = new Vehicle();
+        vehicle1.accelerate(60, 1);
+
 ////        vehicle1.totalVehicleCount = 1;
 //
 //        Vehicle vehicle2 = new Vehicle();
