@@ -9,16 +9,18 @@ public class App {
         Game game = new Game();
         game.start();
 
-        Vehicle vehicle1 = new Vehicle();
-        vehicle1.setMake("     VW    ");
-        vehicle1.setModel("Golf");
-        vehicle1.setColor("red");
-
-        System.out.println(vehicle1.getMake());
-
-        vehicle1.accelerate(60, 1);
-
-        System.out.println("Total vehicle count: " + Vehicle.getTotalVehicleCount());
+//        Vehicle vehicle1 = new Vehicle();
+//        vehicle1.setMake("     VW    ");
+//        vehicle1.setModel("Golf");
+//        vehicle1.setColor("red");
+//
+//        System.out.println(vehicle1.getMake());
+//
+//        System.out.println(vehicle1.totalTraveledDistance);
+//
+//        vehicle1.accelerate(60, 1);
+//
+//        System.out.println("Total vehicle count: " + Vehicle.getTotalVehicleCount());
 
 ////        vehicle1.totalVehicleCount = 1;
 //
