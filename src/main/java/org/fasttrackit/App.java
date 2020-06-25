@@ -2,9 +2,7 @@ package org.fasttrackit;
 
 import org.fasttrackit.service.Game;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 // one-line comment
 public class App {
@@ -12,6 +10,25 @@ public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+//
+//        Set<String> cities = new HashSet<>();
+//        cities.add("Cluj-Napoca");
+//        cities.add("Oradea");
+//        cities.add("London");
+//        cities.add("London");
+//
+//        System.out.println("Number of unique cities: " + cities.size());
+//
+//        Iterator<String> citiesIterator = cities.iterator();
+//
+//        while (citiesIterator.hasNext()) {
+//            System.out.println(citiesIterator.next());
+//        }
+//
+//        do {
+//            System.out.println(citiesIterator.next());
+//        } while (citiesIterator.hasNext());
+
 
 //        List<String> authors = new ArrayList<>();
 //        authors.add("Tolkien");
