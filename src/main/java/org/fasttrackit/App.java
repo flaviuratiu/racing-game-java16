@@ -10,6 +10,18 @@ public class App {
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+
+//        Map<String, String> descriptionTranslations = new HashMap<>();
+//        descriptionTranslations.put("en", "Some description");
+//        descriptionTranslations.put("ro", "O descriere");
+//        descriptionTranslations.put("ro", "O alta descriere");
+//
+//        System.out.println(descriptionTranslations.size());
+//
+//        for (Map.Entry<String, String> entry : descriptionTranslations.entrySet()) {
+//            System.out.println(entry.getKey() + ": " + entry.getValue());
+//        }
+
 //
 //        Set<String> cities = new HashSet<>();
 //        cities.add("Cluj-Napoca");
