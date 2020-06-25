@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-import org.fasttrackit.cheater.CheatingVehicle;
+import org.fasttrackit.service.Game;
 
 // one-line comment
 public class App {
