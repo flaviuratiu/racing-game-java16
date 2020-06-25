@@ -2,12 +2,43 @@ package org.fasttrackit;
 
 import org.fasttrackit.service.Game;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 // one-line comment
 public class App {
 
     public static void main(String[] args) {
         Game game = new Game();
         game.start();
+
+//        List<String> authors = new ArrayList<>();
+//        authors.add("Tolkien");
+//        authors.add("C.S. Lewis");
+//        authors.add("J.K.Rowling");
+//        authors.add("Eminescu");
+//
+//
+//        boolean eminescuFavoriteAuthor = authors.contains("Eminescu");
+//
+//        String[] authorsArray = new String[4];
+//        authorsArray[0] = "Eminescu";
+//
+//        for (String author : authorsArray) {
+//            if (author.equals("Eminescu")) {
+//                eminescuFavoriteAuthor = true;
+//            }
+//        }
+//
+//        String email = "flaviu@fasttrackit.org";
+//        String[] emailParts = email.split("@");
+//
+//        System.out.println(emailParts[0]);
+//        System.out.println(emailParts[1]);
+//
+//
+//        List<String> authors2 = Arrays.asList("test", "test2");
 
 //        // polymorphism
 //        Vehicle vehicle = new CheatingVehicle();
