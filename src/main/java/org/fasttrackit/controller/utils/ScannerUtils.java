@@ -1,5 +1,6 @@
 package org.fasttrackit.controller.utils;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ScannerUtils {
@@ -13,9 +14,11 @@ public class ScannerUtils {
     }
 
     public static double readNextSingleDouble() {
-        double value = SCANNER.nextDouble();
-        SCANNER.nextLine();
-        return value;
+        try {
+            return SCANNER.nextDouble();
+        } finally {
+            SCANNER.nextLine();
+        }
     }
 
 }
