@@ -34,6 +34,10 @@ public class Game {
         while (winnerNotKnown && outOfRaceCompetitors.size() < competitors.size()) {
             playOneRound();
         }
+
+        if (winnerNotKnown) {
+            System.out.println("Game over. There's no winner.");
+        }
     }
 
     private void initializeCompetitors() {
@@ -53,7 +57,9 @@ public class Game {
     }
 
     private void playOneRound() {
+        System.out.println();
         System.out.println("New round");
+        System.out.println();
 
         // enhanced for (for-each)
         for (Mobile competitor : competitors) {
@@ -62,6 +68,7 @@ public class Game {
                 continue;
             }
 
+            System.out.println();
             double speed = controller.getAccelerationSpeedFromUser();
 
             competitor.accelerate(speed, 1);
